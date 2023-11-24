@@ -20,9 +20,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt  
-       
+        pip install -r requirements.txt  # Si tienes un archivo de requisitos
+        # O cualquier otro comando para instalar dependencias de tu lenguaje
 
     - name: Build
       run: |
+        # Comandos para compilar/construir/empaquetar tu solución
+        # Ejemplo para Python:
         python hola_mundo.py

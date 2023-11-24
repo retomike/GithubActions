@@ -3,7 +3,7 @@ name: Hello World
 on:
   push:
     branches:
-      - main  # Cambia esto si estás usando una rama diferente
+      - main 
 
 jobs:
   build:

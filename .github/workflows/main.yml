@@ -1,30 +1,18 @@
-name: Build
+name: Hello World
 
 on:
   push:
     branches:
-      - main
+      - main  # Cambia esto si estás usando una rama diferente
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout Repository
       uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.x
-
-    - name: Install dependencies
+    - name: Run Python Script
       run: |
-        pip install -r requirements.txt  # Si tienes un archivo de requisitos
-        # O cualquier otro comando para instalar dependencias de tu lenguaje
-
-    - name: Build
-      run: |
-        # Comandos para compilar/construir/empaquetar tu solución
-        # Ejemplo para Python:
-        python hola_mundo.py
+        python hello_world.py
